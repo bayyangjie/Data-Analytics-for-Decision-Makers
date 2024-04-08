@@ -11,8 +11,8 @@ This analytics project focuses on understanding the booking habits of users on t
 1. Tripadvisor can identify the number of bookings for the different periods of the year to understand which parts of the year have high demand for hotel bookings
 2. Distribution of count of total hotel reviews by month
 3. Distribution of member years on Tripadvisor to understand the spread of membership years of existing customers
-4. Determine which hotel features contributes to a high star rating ( >=4)
-5. What is the likely chance of a hotel receiving a 5 star rating ?
+4. Determine the contributing factors that lead to low/high star ( >=4) hotel rating 
+5. What is the likely chance of a hotel receiving a 5-star rating ?
 
 ### Techniques that could be employed
 - Creating visualization plots: Bar charts were used to analyze the distribution in the variables required for the objectives mentioned earlier. 
@@ -96,10 +96,13 @@ From the distribution plot, we can see that majority of customers (299) have bee
 ![Image 14](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2014.png)
 
 ## Objective #4
-Determine which hotel features contribute to a high star rating ( >=4)
-From the KMeans clustering output below, only hotels in cluster 2 have a star rating of 4 and above. There are some features that hotels in this cluster have that leads to a higher star rating. Firstly, as shown in the image below, hotels in cluster 2 have spa facilities while hotels in the other 2 clusters do not have.
+Determine the contributing factors that lead to low/high star ( >=4) hotel rating 
 
-Secondly, the number of rooms in the hotel could also play a part in the star rating of the hotel. As shown in the bottom image, hotels in clusters 2 have over 2600 rooms. Having more rooms to accommodate more bookings can means that more guests are able to book the hotel which can also lead to a higher chance of obtaining good star ratings too.
+From the KMeans clustering output below, only hotels in cluster 2 have a star rating of 4 and above. There are some features that hotels in this cluster have that leads to a higher star. Based on the image shown below, we can make the following inferences.
+
+Firstly, hotels in cluster 2 have spa facilities while hotels in the other 2 clusters do not have.
+
+Secondly, the number of rooms in the hotel could also play a part in the star rating of the hotel. Hotels in cluster 2 have over 2600 rooms. Having more rooms to accommodate more bookings can mean that more guests can book the hotel which can also lead to a higher chance of obtaining good star ratings too.
  
 Contributing factors for lowest star rating of hotels in cluster 3:
 Hotels in cluster 3 have the lowest star rating but this could be due to the absence of a casino, a facility/feature that hotels in the other two clusters have. A casino is a popular place for tourists, thus the benefits of having it can greatly affect a hotel’s rating. Although hotels in cluster 3 do have a tennis court, but it may not be appealing enough to garner higher ratings. This could also be due to the observation that most traveller types in this cluster as well as the entire dataset are couples, most might prefer to explore other types of facilities that the hotel has to offer.
@@ -108,7 +111,7 @@ Hotels in cluster 3 have the lowest star rating but this could be due to the abs
                  
 ## Objective #5 
 Objective: What is the likely chance of a hotel receiving a 5-star rating?
-The C&R tree can be used to determine what is the likely chance of a hotel receiving a 5-star rating based on the input of the other contributing factors.
+The C&R tree can be used to determine the likely chance of a hotel receiving a 5-star rating based on the input of the other contributing factors.
 Based on the C&R tree, the predictor importance shows that whether a hotel has a swimming pool or not has the greatest influence on the hotel star rating while the availability of a gym in a hotel has the lowest significance on the hotel star rating.
 
 ![Image 16](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2016.png)
@@ -119,9 +122,9 @@ Here, the C&R decision tree is used to predict the hotel star rating based on th
 
 ![Image 18](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2018.png)
 
-Based on the tree diagram shown above, the prediction shows that in order for a hotel to receive a 5-star rating, the combination of feature characteristics that a hotel should have are as follows:
+Based on the tree diagram shown above, the prediction shows that for a hotel to receive a 5-star rating, the combination of feature characteristics that a hotel should have are as follows:
 - a pool
-- more than 1255 rooms (more than 4004 rooms OR total rooms must be at least between 3014 and or equals to 3957)
+- more than 1255 rooms (more than 4004 rooms OR total rooms must be at least between 3014 and or equal to 3957)
 
 # Discussion/Evaluation and Conclusion
 Key pattern:
