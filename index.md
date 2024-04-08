@@ -65,45 +65,50 @@ Objective #1: Tripadvisor can identify the number of bookings for the different 
 The barplot created shows the total booking counts for each quarter of the year. From the plot, we can see that overall, the difference in count of bookings for each quarter appears to be quite small. The first quarter of the year (Mar-May) has the highest number of bookings at 128 while the last quarter of the year (Dec-Feb) has the lowest at 124. Additionally, based on the cluster matrix table below, not only does it show that total bookings is the highest for period of Mar-May but the number of bookings is also higher during that period for each individual cluster.
 
 Cluster matrix:
- ![Image 11](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2011.png)
+![Image 11](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2011.png)
 
- ![image](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/assets/153354426/6f7e5404-7d48-476a-aa21-2974d146b0ff)
+![Image 12](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2012.png)
 
 Objective #2: Distribution of count of total hotel reviews by month
 The distribution plot shown below displays the spread of total hotel reviews submitted by month. It shows that September has the highest count of hotel reviews followed by August. October has the lowest count of hotel reviews submitted.
  
+![Image 13](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2013.png)
 
 Objective #3: Distribution of member years on Tripadvisor to understand the spread of membership years of existing customers
  
 From the distribution plot, we can see that majority of customers (299) have been members with Tripadvisor around the range of 1 to 5 years. Only 1 customer has the highest membership years of 13. The company could place more focus on the majority group of customers by keeping them updated with the latest or new membership programs/benefits. This is to encourage them to extend their membership once it expires.
 
-
+ ![Image 14](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2014.png)
 
 Objective #4: Determine which hotel features contribute to a high star rating ( >=4)
-From the KMeans clustering output below, only hotels in cluster 2 have a star rating of 4 and above. There are some features that hotels in this cluster have that leads to a higher star rating. Firstly, hotels in cluster 2 have spa facilities while hotels in the other 2 clusters do not have. 
- 
-Secondly, the number of rooms in the hotel could also play a part in the star rating of the hotel. As shown from above, hotels in clusters 2 have over 2600 rooms. Having more rooms to accommodate more bookings can means that more guests are able to book the hotel which can also lead to a higher chance of obtaining good star ratings too.
- 
+From the KMeans clustering output below, only hotels in cluster 2 have a star rating of 4 and above. There are some features that hotels in this cluster have that leads to a higher star rating. Firstly, as shown in the image below, hotels in cluster 2 have spa facilities while hotels in the other 2 clusters do not have.
 
+Secondly, the number of rooms in the hotel could also play a part in the star rating of the hotel. As shown in the bottom image, hotels in clusters 2 have over 2600 rooms. Having more rooms to accommodate more bookings can means that more guests are able to book the hotel which can also lead to a higher chance of obtaining good star ratings too.
+ 
 Contributing factors for lowest star rating of hotels in cluster 3:
 Hotels in cluster 3 have the lowest star rating but this could be due to the absence of a casino, a facility/feature that hotels in the other two clusters have. A casino is a popular place for tourists, thus the benefits of having it can greatly affect a hotel’s rating. Although hotels in cluster 3 do have a tennis court, but it may not be appealing enough to garner higher ratings. This could also be due to the observation that most traveller types in this cluster as well as the entire dataset are couples, most might prefer to explore other types of facilities that the hotel has to offer.
- 
-                 
 
+ ![Image 15](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2015.png)
+
+                 
 Predictive modelling
 Objective: What is the likely chance of a hotel receiving a 5 star rating ?
 The C&R tree can be used to determine what is the likely chance of a hotel receiving a 5 star rating based on the input of the other contributing factors.
 Based on the C&R tree, the predictor importance shows that whether a hotel has a swimming pool or not has the greatest influence on the hotel star rating while the availability of a gym in a hotel has the lowest significance on the hotel star rating.
- 
+
+ ![Image 16](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2016.png)
+
 Here, the C&R decision tree is used to make a prediction on the hotel star rating based on the input of the different hotel features. The C&R tree map was plotted to determine which combination of the relevant input variables would produce the highest star rating for a hotel. The input variables used for plotting the tree are pool, gym, tennis court, spa, casino, free internet, number of rooms, user country and score. The algorithm used in the tree automatically discarded the variables that do not contribute significantly to improving the predictive accuracy. The final input variables used by the algorithm are number of rooms, gym, pool score and user country. The snapshots below show the flow in the decision tree.
  
- 
+![Image 17](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2017.png)
+
+![Image 18](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2018.png)
 
 Based on the tree diagram shown above, the prediction shows that in order for a hotel to receive a 5-star rating, the combination of feature characteristics that a hotel should have are as follows:
 - a pool
 - more than 1255 rooms (more than 4004 rooms OR total rooms must be at least between 3014 and or equals to 3957)
 
-1d) Discussion/Evaluation and Conclusion
+Discussion/Evaluation and Conclusion
 Key pattern:
 One key pattern observed is that number of rooms that a hotel has and having a pool are two factors that play a big part in the star rating of the hotel. This can be supported by observations from both the clustering output whereby hotels in cluster 2 that have the most rooms have the highest star ratings and the C&R tree chart where the hotels with 5-star ratings fall under the splitted path of ‘Pool=YES’ and room count of 3000 to 4000.
 
