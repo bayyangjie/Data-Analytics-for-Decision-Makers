@@ -25,12 +25,12 @@ The variables are a mixed of different data types with categorical and numerical
 
 ![Image 1](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%201.png)
 
-## Data values misalignment
+### Data values misalignment
 - In the columns from ‘Nr.rooms’ to the last column, it was found that the columns were shifted to the right by one column resulting in misalignment of the data to the correct column labels. Thus, also resulting in an extra column created at the end. There were a total of 96 affected rows in each of the affected column bringing the total affected cells to 576 as shown below. During verification of the data in the var.file node, it also shows that ‘User continent’ has incorrect values displayed, which further prompted further checking of the dataset.
 
 Excel was used to shift the columns back into place so that the data values correspond with the appropriate column label as shown below. There are also no more unknown values that exist in the last column which was deleted thereafter.
 
-## Invalid values found in ‘User continent’ column
+### Invalid values found in ‘User continent’ column
 
 ![Image 2](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%202.png)
 
@@ -42,7 +42,7 @@ After modifying dataset alignment in excel:
 
 ![Image 4](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%204.png)
 
-## Illogical values
+### Illogical values
 - As shown in the python .describe() output of ‘Member years’, there is an illogical value of ‘-1806’ which does not makes sense to the data. Since it happens only one specific row, it was removed from the dataset.
 
 - Data audit below also shows the illogical value of ‘-1806’ in ‘Member years’ column as the minimum value.
@@ -57,12 +57,12 @@ After
 
 ![Image 6](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%206.png)
 
-## Check for missing/NULL values
+### Check for missing/NULL values
 Data audit shows no NULL or missing values in the dataset.
 
-![Image 8](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/tree/main/Pictures#:~:text=1%20minute%20ago-,Picture%208.png,-Add%20files%20via)
+![Image 8](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%208.png?raw=true)
 
-## Outliers
+### Outliers
 The number of outliers for the respective columns shown below are very few and quite insignificant as compared to the total number of records of 504.
 
 ![Image 9](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%209.png)
