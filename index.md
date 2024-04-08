@@ -110,14 +110,17 @@ Based on the tree diagram shown above, the prediction shows that in order for a 
 
 Discussion/Evaluation and Conclusion
 Key pattern:
+
 One key pattern observed is that number of rooms that a hotel has and having a pool are two factors that play a big part in the star rating of the hotel. This can be supported by observations from both the clustering output whereby hotels in cluster 2 that have the most rooms have the highest star ratings and the C&R tree chart where the hotels with 5-star ratings fall under the splitted path of ‘Pool=YES’ and room count of 3000 to 4000.
 
-Limitations of analysis:	
+Limitations of analysis:
+
 One limitation of the analysis is the relatively small sample size, which may impact the precision of the results. To enhance the analysis, more data could be collected from similar sources or expanding the dataset to include a broader population.
 Another limitation of the analysis is the variety of hotel features listed. There are many other hotel features that could be considered which could affect the outcome of the hotel star rating. In this analysis, only specific features were considered. Thus, if a wider field of features could be utilised, a more accurate analysis could be achieved.
 One such method to increase the collection and variety of data could be through the use of API calls whereby real time data can be extracted from the booking platform’s database to retrieve the additional data required for analysis.
 
 Conclusion:
+
 In conclusion, this study has shed light on the booking habits of users such as the frequent travelling periods of the year and hotel features that are of importance to users when booking. The clustering analysis provided valuable insights into the characteristics of the different clusters of data points, thereby providing a better understanding of the dataset as a whole. Through this analysis, Tripadvisor would be better able to recommend suitable hotels to users and bring about increased user traffic as well as membership rates on the platform.
 ![image](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/assets/153354426/ea3f2223-e9f6-4577-a793-fbb49d588595)
 
