@@ -42,7 +42,7 @@ Illogical values:
 - As shown in the python .describe() output of ‘Member years’, there is an illogical value of ‘-1806’ which does not makes sense to the data. Since it happens only one specific row, it was removed from the dataset.
 
 - Data audit below also shows the illogical value of ‘-1806’ in ‘Member years’ column as the minimum value.
-- 
+
 ![Image 7](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%207.png)
 
 Before
