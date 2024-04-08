@@ -25,6 +25,7 @@ Data values misalignment:
 - In the columns from ‘Nr.rooms’ to the last column, it was found that the columns were shifted to the right by one column resulting in misalignment of the data to the correct column labels. Thus, also resulting in an extra column created at the end. There were a total of 96 affected rows in each of the affected column bringing the total affected cells to 576 as shown below. During verification of the data in the var.file node, it also shows that ‘User continent’ has incorrect values displayed, which further prompted further checking of the dataset.
 
 Excel was used to shift the columns back into place so that the data values correspond with the appropriate column label as shown below. There are also no more unknown values that exist in the last column which was deleted thereafter.
+
 Invalid values found in ‘User continent’ column:
 ![Image 2](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%202.png)
 
