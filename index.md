@@ -32,6 +32,7 @@ Invalid values found in ‘User continent’ column:
 Before modifying dataset alignment in excel:
 ![Image 3](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%203.png)
 
+<br>
 After modifying dataset alignment in excel:
 ![Image 4](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%204.png)
 
