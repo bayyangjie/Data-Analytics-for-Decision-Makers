@@ -27,37 +27,46 @@ Data values misalignment:
 Excel was used to shift the columns back into place so that the data values correspond with the appropriate column label as shown below. There are also no more unknown values that exist in the last column which was deleted thereafter.
 
 Invalid values found in ‘User continent’ column:
+
 ![Image 2](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%202.png)
 
 Before modifying dataset alignment in excel:
+
 ![Image 3](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%203.png)
 
 <br>
 After modifying dataset alignment in excel:
+
 ![Image 4](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%204.png)
 
 Illogical values:
 - As shown in the python .describe() output of ‘Member years’, there is an illogical value of ‘-1806’ which does not makes sense to the data. Since it happens only one specific row, it was removed from the dataset.
 
 - Data audit below also shows the illogical value of ‘-1806’ in ‘Member years’ column as the minimum value.
+- 
 ![Image 7](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%207.png)
 
 Before
+
 ![Image 5](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%205.png)
 
 After
+
 ![Image 6](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%206.png)
 
 Check for missing/NULL values:
 Data audit shows no NULL or missing values in the dataset.
+
 ![Image 8](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/tree/main/Pictures#:~:text=1%20minute%20ago-,Picture%208.png,-Add%20files%20via)
 
 Outliers:
 The number of outliers for the respective columns shown below are very few and quite insignificant as compared to the total number of records of 504.
+
 ![Image 9](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%209.png)
 
 
 As mentioned previously, clustering was performed and the dataset is categorized into 3 clusters of data points as shown below. Based on the description of the clusters, most of the records are in cluster 2 which makes up 71.4% of the entire dataset. Clustering quality as shown by the silhouette score is at a fair level. 
+
 ![Image 10](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2010.png)
 
 
@@ -66,6 +75,7 @@ Objective #1: Tripadvisor can identify the number of bookings for the different 
 The barplot created shows the total booking counts for each quarter of the year. From the plot, we can see that overall, the difference in count of bookings for each quarter appears to be quite small. The first quarter of the year (Mar-May) has the highest number of bookings at 128 while the last quarter of the year (Dec-Feb) has the lowest at 124. Additionally, based on the cluster matrix table below, not only does it show that total bookings is the highest for period of Mar-May but the number of bookings is also higher during that period for each individual cluster.
 
 Cluster matrix:
+
 ![Image 11](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2011.png)
 
 ![Image 12](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2012.png)
@@ -79,7 +89,7 @@ Objective #3: Distribution of member years on Tripadvisor to understand the spre
  
 From the distribution plot, we can see that majority of customers (299) have been members with Tripadvisor around the range of 1 to 5 years. Only 1 customer has the highest membership years of 13. The company could place more focus on the majority group of customers by keeping them updated with the latest or new membership programs/benefits. This is to encourage them to extend their membership once it expires.
 
- ![Image 14](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2014.png)
+![Image 14](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2014.png)
 
 Objective #4: Determine which hotel features contribute to a high star rating ( >=4)
 From the KMeans clustering output below, only hotels in cluster 2 have a star rating of 4 and above. There are some features that hotels in this cluster have that leads to a higher star rating. Firstly, as shown in the image below, hotels in cluster 2 have spa facilities while hotels in the other 2 clusters do not have.
@@ -89,7 +99,7 @@ Secondly, the number of rooms in the hotel could also play a part in the star ra
 Contributing factors for lowest star rating of hotels in cluster 3:
 Hotels in cluster 3 have the lowest star rating but this could be due to the absence of a casino, a facility/feature that hotels in the other two clusters have. A casino is a popular place for tourists, thus the benefits of having it can greatly affect a hotel’s rating. Although hotels in cluster 3 do have a tennis court, but it may not be appealing enough to garner higher ratings. This could also be due to the observation that most traveller types in this cluster as well as the entire dataset are couples, most might prefer to explore other types of facilities that the hotel has to offer.
 
- ![Image 15](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2015.png)
+![Image 15](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2015.png)
 
                  
 Predictive modelling
@@ -97,7 +107,7 @@ Objective: What is the likely chance of a hotel receiving a 5-star rating?
 The C&R tree can be used to determine what is the likely chance of a hotel receiving a 5-star rating based on the input of the other contributing factors.
 Based on the C&R tree, the predictor importance shows that whether a hotel has a swimming pool or not has the greatest influence on the hotel star rating while the availability of a gym in a hotel has the lowest significance on the hotel star rating.
 
- ![Image 16](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2016.png)
+![Image 16](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2016.png)
 
 Here, the C&R decision tree is used to predict the hotel star rating based on the input of the different hotel features. The C&R tree map was plotted to determine which combination of the relevant input variables would produce the highest star rating for a hotel. The input variables used for plotting the tree are pool, gym, tennis court, spa, casino, free internet, number of rooms, user country and score. The algorithm used in the tree automatically discarded the variables that do not contribute significantly to improving the predictive accuracy. The final input variables used by the algorithm are the number of rooms, gym, pool score and user country. The snapshots below show the flow in the decision tree.
  
@@ -123,8 +133,6 @@ One such method to increase the collection and variety of data could be through 
 Conclusion:
 
 In conclusion, this study has shed light on the booking habits of users such as the frequent travelling periods of the year and hotel features that are of importance to users when booking. The clustering analysis provided valuable insights into the characteristics of the different clusters of data points, thereby providing a better understanding of the dataset as a whole. Through this analysis, Tripadvisor would be better able to recommend suitable hotels to users and bring about increased user traffic as well as membership rates on the platform.
-
-
 
 
 
