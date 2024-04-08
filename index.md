@@ -1,4 +1,11 @@
+## Project background
 This analytics project focuses on understanding the booking habits of users on the Tripadvisor platform and to also bridge a link to users’ demographic information. It employs different analytical techniques in achieving the objectives of the analysis from visualizations to predictive analytics. In addition, it also emphasizes on data management and cleaning to ensure cleaned data is being used as input for achieving an accurate analysis output.
+
+## Learning points
+- Knowledge in planning and executing an analytics project using real-world data
+- Learned to use the CRISP-DM framework as a guide for each step of the analytical process
+- Acquired knowledge in SPSS Modeler software on carrying out the different stages of the analysis
+- Understood how to use KMeans technique for clustering and C&R tree for constructing predictive models
 
 Visualization/Clustering
 1. Tripadvisor can identify the number of bookings for the different periods of the year to understand which parts of the year have high demand for hotel bookings
@@ -6,7 +13,7 @@ Visualization/Clustering
 3. Distribution of member years on Tripadvisor to understand the spread of membership years of existing customers
 4. Determine which hotel features contributes to a high star rating ( >=4)
 
-Predictive: Using C&R tree method
+Predictive - Using C&R tree method
 1. What is the likely chance of a hotel receiving a 5 star rating ?
 
 Techniques that could be employed
@@ -19,6 +26,7 @@ The barplot created shows the total booking counts for each quarter of the year.
 
 Data Understanding/Treatment:
 The variables are a mixed of different data types with categorical and numerical values. The roles are set as ‘input’ for all the fields as all the variables are used as inputs for making predictions/learning patterns
+
 ![Image 1](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%201.png)
 
 Data values misalignment:
