@@ -21,7 +21,6 @@ This analytics project focuses on understanding the booking habits of users on t
 
 # Data cleaning/understanding
 
-## Data Understanding/Treatment
 The variables are a mixed of different data types with categorical and numerical values. The roles are set as ‘input’ for all the fields as all the variables are used as inputs for making predictions/learning patterns
 
 ![Image 1](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%201.png)
