@@ -14,7 +14,7 @@ This analytics project focuses on understanding the booking habits of users on t
 4. Determine which hotel features contributes to a high star rating ( >=4)
 5. What is the likely chance of a hotel receiving a 5 star rating ?
 
-## Techniques that could be employed
+### Techniques that could be employed
 - Creating visualization plots: Bar charts were used to analyze the distribution in the variables required for the objectives mentioned earlier. 
 - Clustering: The purpose of the clustering is to group similar data points. With specific data points clusters formed, the company can then focus on the specific characteristics of each cluster for targeted or personalized advertisements. 
 - Predictive modelling: The specific tool used would be the C&R decision tree which is used to make predictions based on the values of input variables by splitting the dataset into training and testing data. 
