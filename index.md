@@ -55,7 +55,6 @@ The number of outliers for the respective columns shown below are very few and q
 ![Image 9](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%209.png)
 
 
-1c)
 As mentioned previously, clustering was performed and the dataset is categorized into 3 clusters of data points as shown below. Based on the description of the clusters, most of the records are in cluster 2 which makes up 71.4% of the entire dataset. Clustering quality as shown by the silhouette score is at a fair level. 
 ![Image 10](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2010.png)
 
@@ -92,13 +91,13 @@ Hotels in cluster 3 have the lowest star rating but this could be due to the abs
 
                  
 Predictive modelling
-Objective: What is the likely chance of a hotel receiving a 5 star rating ?
-The C&R tree can be used to determine what is the likely chance of a hotel receiving a 5 star rating based on the input of the other contributing factors.
+Objective: What is the likely chance of a hotel receiving a 5-star rating?
+The C&R tree can be used to determine what is the likely chance of a hotel receiving a 5-star rating based on the input of the other contributing factors.
 Based on the C&R tree, the predictor importance shows that whether a hotel has a swimming pool or not has the greatest influence on the hotel star rating while the availability of a gym in a hotel has the lowest significance on the hotel star rating.
 
  ![Image 16](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2016.png)
 
-Here, the C&R decision tree is used to make a prediction on the hotel star rating based on the input of the different hotel features. The C&R tree map was plotted to determine which combination of the relevant input variables would produce the highest star rating for a hotel. The input variables used for plotting the tree are pool, gym, tennis court, spa, casino, free internet, number of rooms, user country and score. The algorithm used in the tree automatically discarded the variables that do not contribute significantly to improving the predictive accuracy. The final input variables used by the algorithm are number of rooms, gym, pool score and user country. The snapshots below show the flow in the decision tree.
+Here, the C&R decision tree is used to predict the hotel star rating based on the input of the different hotel features. The C&R tree map was plotted to determine which combination of the relevant input variables would produce the highest star rating for a hotel. The input variables used for plotting the tree are pool, gym, tennis court, spa, casino, free internet, number of rooms, user country and score. The algorithm used in the tree automatically discarded the variables that do not contribute significantly to improving the predictive accuracy. The final input variables used by the algorithm are the number of rooms, gym, pool score and user country. The snapshots below show the flow in the decision tree.
  
 ![Image 17](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/blob/main/Pictures/Picture%2017.png)
 
@@ -111,19 +110,17 @@ Based on the tree diagram shown above, the prediction shows that in order for a 
 Discussion/Evaluation and Conclusion
 Key pattern:
 
-One key pattern observed is that number of rooms that a hotel has and having a pool are two factors that play a big part in the star rating of the hotel. This can be supported by observations from both the clustering output whereby hotels in cluster 2 that have the most rooms have the highest star ratings and the C&R tree chart where the hotels with 5-star ratings fall under the splitted path of ‘Pool=YES’ and room count of 3000 to 4000.
+One key pattern observed is that number of rooms that a hotel has and having a pool are two factors that play a big part in the star rating of the hotel. This can be supported by observations from both the clustering output whereby hotels in cluster 2 that have the most rooms have the highest star ratings and the C&R tree chart where the hotels with 5-star ratings fall under the split path of ‘Pool=YES’ and room count of 3000 to 4000.
 
 Limitations of analysis:
 
 One limitation of the analysis is the relatively small sample size, which may impact the precision of the results. To enhance the analysis, more data could be collected from similar sources or expanding the dataset to include a broader population.
-Another limitation of the analysis is the variety of hotel features listed. There are many other hotel features that could be considered which could affect the outcome of the hotel star rating. In this analysis, only specific features were considered. Thus, if a wider field of features could be utilised, a more accurate analysis could be achieved.
-One such method to increase the collection and variety of data could be through the use of API calls whereby real time data can be extracted from the booking platform’s database to retrieve the additional data required for analysis.
+Another limitation of the analysis is the variety of hotel features listed. Many other hotel features could be considered which could affect the outcome of the hotel star rating. In this analysis, only specific features were considered. Thus, if a wider field of features could be utilised, a more accurate analysis could be achieved.
+One such method to increase the collection and variety of data could be through the use of API calls whereby real-time data can be extracted from the booking platform’s database to retrieve the additional data required for analysis.
 
 Conclusion:
 
 In conclusion, this study has shed light on the booking habits of users such as the frequent travelling periods of the year and hotel features that are of importance to users when booking. The clustering analysis provided valuable insights into the characteristics of the different clusters of data points, thereby providing a better understanding of the dataset as a whole. Through this analysis, Tripadvisor would be better able to recommend suitable hotels to users and bring about increased user traffic as well as membership rates on the platform.
-![image](https://github.com/bayyangjie/Data-Analytics-for-Decision-Makers/assets/153354426/ea3f2223-e9f6-4577-a793-fbb49d588595)
-
 
 
 
